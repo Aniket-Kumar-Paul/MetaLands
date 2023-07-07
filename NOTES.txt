@@ -8,3 +8,8 @@
 
 - chai library for testing contract
 > npm i chai chai-as-promised   
+
+> npm i ganache --global
+> ganache-cli (starts development blockchain)
+> truffle migrate --reset (deploy contracts)
+> truffle test (run test scripts)

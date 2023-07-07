@@ -4,7 +4,7 @@ require("chai").use(require("chai-as-promised")).should();
 
 const EVM_REVERT = "VM Exception while processing transaction: revert";
 
-contract("Land", (accounts) => {
+contract("Land", ([owner1, owner2]) => { // take the first 2 addresses in ganache as owner1 and owner2
   const NAME = "metaLand";
   const SYMBOL = "ML";
   const COST = web3.utils.toWei("1", "ether");
@@ -12,7 +12,7 @@ contract("Land", (accounts) => {
   let land, result;
 
   beforeEach(async () => {
-    land = await Land.new(NAME, SYMBOL, COST); // Deploy new contract before each test
+    land = await Land.new(NAME, SYMBOL, COST); // Create a new instance of the contract
   });
 
   describe("Deployment", () => {
