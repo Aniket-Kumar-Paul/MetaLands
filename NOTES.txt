@@ -15,3 +15,4 @@
 > truffle test (run test scripts)
 
 > npm i web3
+> npm i three @react-three/cannon @react-three/drei @react-three/fiber
