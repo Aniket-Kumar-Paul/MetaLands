@@ -13,3 +13,5 @@
 > ganache-cli (starts development blockchain)
 > truffle migrate --reset (deploy contracts)
 > truffle test (run test scripts)
+
+> npm i web3
