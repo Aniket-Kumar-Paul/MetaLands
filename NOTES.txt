@@ -5,3 +5,6 @@
 - add them (contracts_directory & build_directory) in truffle-config.js
 
 > npm i @openzeppelin/contracts
+
+- chai library for testing contract
+> npm i chai chai-as-promised   
